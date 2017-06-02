@@ -1,0 +1,13 @@
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\bin\x64\Debug\GlobalHook.dll
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\bin\x64\Debug\GlobalHook.pdb
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\x64\Debug\GlobalHook.dll
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\x64\Debug\GlobalHook.pdb
+G:\Documentos\Proyectos Visual\Reproductor 3.1 DVD\GlobalHook\bin\x64\Debug\GlobalHook.dll
+G:\Documentos\Proyectos Visual\Reproductor 3.1 DVD\GlobalHook\bin\x64\Debug\GlobalHook.pdb
+G:\Documentos\Proyectos Visual\Reproductor 3.1 DVD\GlobalHook\bin\x64\Debug\NetRadioLib.dll
+G:\Documentos\Proyectos Visual\Reproductor 3.1 DVD\GlobalHook\bin\x64\Debug\Bass.Net.dll
+G:\Documentos\Proyectos Visual\Reproductor 3.1 DVD\GlobalHook\bin\x64\Debug\NetRadioLib.pdb
+G:\Documentos\Proyectos Visual\Reproductor 3.1 DVD\GlobalHook\obj\x64\Debug\ResolveAssemblyReference.cache
+G:\Documentos\Proyectos Visual\Reproductor 3.1 DVD\GlobalHook\obj\x64\Debug\GlobalHook.dll
+G:\Documentos\Proyectos Visual\Reproductor 3.1 DVD\GlobalHook\obj\x64\Debug\GlobalHook.pdb

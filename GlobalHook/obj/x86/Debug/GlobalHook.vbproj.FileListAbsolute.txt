@@ -1,0 +1,14 @@
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\bin\x86\Debug\GlobalHook.dll
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\bin\x86\Debug\GlobalHook.pdb
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\bin\x86\Debug\GlobalHook.xml
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\x86\Debug\GlobalHook.dll
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\x86\Debug\GlobalHook.xml
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\x86\Debug\GlobalHook.pdb
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\bin\x86\Debug\GlobalHook.dll
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\bin\x86\Debug\GlobalHook.pdb
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\bin\x86\Debug\GlobalHook.xml
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\obj\x86\Debug\GlobalHook.dll
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\obj\x86\Debug\GlobalHook.xml
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\obj\x86\Debug\GlobalHook.pdb

@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnCompMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnCompMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dspNext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\dspNext.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSigMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnSigMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\base - copia.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSpkMut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnSpkMut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnLisMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnLisMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="secundary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\secundary.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RadioTuner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\RadioTuner.exe;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="icoPrincipal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\icoPrincipal.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoInactivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\icoInactivo.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnRadioMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnRadioMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thRepro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\thRepro.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnLis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnLis.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSpkMutMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnSpkMutMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thParar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\thParar.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnLugLis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnLugLis.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popNext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\popNext.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPararMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnPararMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnModoRepMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnModoRepMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgsrcLista" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\imgsrcLista.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSobreMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnSobreMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnOrden.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoartista" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\icoartista.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popKey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\popKey.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\popClose.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnRadio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnRadio.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgmodnorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\imgmodnorm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnParar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnParar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOpc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnOpc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrdenMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnOrdenMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAbrirMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnAbrirMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnModoRepUn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnModoRepUn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baseCompac___copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\baseCompac - copia.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico_disco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\ico disco.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoVideo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\icoVideo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOpcMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnOpcMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDVDMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnDVDMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnComp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnComp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baseCompac1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\baseCompac.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnClose.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dspPause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\dspPause.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnLugCarp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnLugCarp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnMinMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnMinMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnGen2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnGen2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thPau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\thPau.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popPrev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\popPrev.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoAudio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\icoAudio.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSpk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnSpk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAbrir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnAbrir.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgordrnd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\imgordrnd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnRepro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnRepro.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPauMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnPauMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnExp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnExp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bass.dll;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnDVD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnDVD.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minibase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\minibase.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgmodrepl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\imgmodrepl.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSobre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnSobre.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dspPrev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\dspPrev.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dspPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\dspPlay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popInf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\popInf.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thSig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\thSig.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnGenMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnGenMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnLugCarpMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnLugCarpMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnSig.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dspStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\dspStop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\base.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCloseMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnCloseMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnExpMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnExpMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoActivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\icoActivo.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\popStop.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCarpMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnCarpMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thAnt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\thAnt.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnPau.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgsrcCarp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\imgsrcCarp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\imgLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnGen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnGen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgordnorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\imgordnorm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAnt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnAnt.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCarp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnCarp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnMin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnMin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAudioMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnAudioMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAudio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnAudio.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAntMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnAntMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baseCompac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\baseCompac.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popKeyen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\popKeyen.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnRepOnMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnRepOnMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSWINSCK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\MSWINSCK.OCX;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnLugLisMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnLugLisMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popPlPA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\popPlPA.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnReproMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnReproMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnModoRep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnModoRep.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgmodrepAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\imgmodrepAll.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSpkMov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\btnSpkMov.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minibasetrans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Skin Edgar\minibasetrans.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

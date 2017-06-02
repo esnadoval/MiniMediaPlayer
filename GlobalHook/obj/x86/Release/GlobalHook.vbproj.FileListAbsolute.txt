@@ -1,0 +1,13 @@
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\bin\x86\Release\GlobalHook.dll
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\bin\x86\Release\GlobalHook.xml
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\obj\x86\Release\GlobalHook.dll
+D:\Documentos\Proyectos Visual\Reproductor 3.0 DVD\GlobalHook\obj\x86\Release\GlobalHook.xml
+D:\Reproductor 3.0 DVD\GlobalHook\bin\x86\Release\GlobalHook.dll
+D:\Reproductor 3.0 DVD\GlobalHook\bin\x86\Release\GlobalHook.xml
+D:\Reproductor 3.0 DVD\GlobalHook\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Reproductor 3.0 DVD\GlobalHook\obj\x86\Release\GlobalHook.dll
+D:\Reproductor 3.0 DVD\GlobalHook\obj\x86\Release\GlobalHook.xml
+D:\Reproductor 3.0 DVD\GlobalHook\bin\x86\Release\NetRadioLib.dll
+D:\Reproductor 3.0 DVD\GlobalHook\bin\x86\Release\Bass.Net.dll
+D:\Reproductor 3.0 DVD\GlobalHook\bin\x86\Release\NetRadioLib.pdb

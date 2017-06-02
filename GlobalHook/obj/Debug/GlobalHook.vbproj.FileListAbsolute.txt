@@ -1,0 +1,7 @@
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\bin\GlobalHook.dll
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\bin\GlobalHook.pdb
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\bin\GlobalHook.xml
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\Debug\GlobalHook.dll
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\Debug\GlobalHook.xml
+D:\Documentos\Proyectos Visual\hookex\GlobalHook\obj\Debug\GlobalHook.pdb

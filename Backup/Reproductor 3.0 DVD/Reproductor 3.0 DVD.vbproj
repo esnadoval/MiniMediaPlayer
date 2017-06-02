@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23B03B14-B19D-4716-9C85-92C3757903FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Reproductor_3._0_DVD</RootNamespace>
+    <AssemblyName>Mini Media Player 3.0</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Skin Edgar\icoPrincipal.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Mini Media Player 3.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Mini Media Player 3.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Mini Media Player 3.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Mini Media Player 3.0.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Mini Media Player 3.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Mini Media Player 3.0.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DirectShowLib-2005, Version=2.1.0.0, Culture=neutral, PublicKeyToken=67e7b740cdfc2d3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="MACTrackBarLib, Version=1.0.2351.24468, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MACTrackBarLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="MSNPlug, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MSNPlug.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaz\BarraCarga.Designer.vb">
+      <DependentUpon>BarraCarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\BarraCarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mundo\CommandBuffer.vb" />
+    <Compile Include="Mundo\RandomSequence.vb" />
+    <Compile Include="Mundo\DvdPlayer.vb">
+    </Compile>
+    <Compile Include="Interfaz\FormVideo.Designer.vb">
+      <DependentUpon>FormVideo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FormVideo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\ModuloPrincipal.vb" />
+    <Compile Include="Interfaz\Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Sorte.vb" />
+    <Compile Include="Mundo\id3Lib.vb" />
+    <Compile Include="Mundo\NetRadioInterface.vb" />
+    <Compile Include="Mundo\Plugins.vb" />
+    <Compile Include="Mundo\QuitarMose.vb" />
+    <Compile Include="Mundo\Reproduccion.vb" />
+    <Compile Include="Mundo\Reproductor.vb" />
+    <Compile Include="Mundo\Slider.vb" />
+    <Compile Include="Mundo\TextoMovil.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Interfaz\BarraCarga.resx">
+      <DependentUpon>BarraCarga.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FormVideo.resx">
+      <DependentUpon>FormVideo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\base - copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\baseCompac - copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\baseCompac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnAbrir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnAbrirMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnAnt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnAntMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnCarp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnCarpMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnCloseMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnComp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnCompMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnExp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnExpMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnGen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnGen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnGenMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnLis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnLisMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnLugCarp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnLugCarpMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnLugLis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnLugLisMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnMin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnMinMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnModoRep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnModoRepMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnModoRepUn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnOpc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnOpcMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnOrden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnOrdenMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnParar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnPararMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnPau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnPauMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnRepOnMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnRepro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnReproMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnSig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnSigMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnSobre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnSobreMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnSpk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnSpkMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnSpkMut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnSpkMutMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\dspNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\dspPause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\dspPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\dspPrev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\dspStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\ico disco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\icoActivo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\icoartista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\icoAudio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\icoInactivo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\icoPrincipal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\icoVideo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\imgLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\imgmodnorm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\imgmodrepAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\imgmodrepl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\imgordnorm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\imgordrnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\imgsrcCarp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\imgsrcLista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\popClose.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\popInf.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\popKey.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\popKeyen.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\popNext.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\popPlPA.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\popPrev.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\popStop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\thAnt.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\thParar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\thPau.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\thRepro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\thSig.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnAudio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnAudioMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnDVD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\btnDVDMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalHook\GlobalHook.vbproj">
+      <Project>{FB5018C9-4417-48E5-AA42-A89FB2E4A2F7}</Project>
+      <Name>GlobalHook</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MBTreeViewExplorer\MBTreeViewExplorer.vbproj">
+      <Project>{0931D18D-90EB-47E8-B3A0-12B24861FABD}</Project>
+      <Name>MBTreeViewExplorer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetRadioLib\NetRadioLib.csproj">
+      <Project>{89E11D7C-9DC7-426A-9CA8-34309A1A92C6}</Project>
+      <Name>NetRadioLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bass.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MSWINSCK.OCX" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RadioTuner.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Skin Edgar\btnRadio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Skin Edgar\btnRadioMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\btnRadioMov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\secundary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin Edgar\minibase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Skin Edgar\minibasetrans.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

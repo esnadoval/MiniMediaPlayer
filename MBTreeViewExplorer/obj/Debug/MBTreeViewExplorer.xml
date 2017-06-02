@@ -1,0 +1,311 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MBTreeViewExplorer
+</name>
+</assembly>
+<members>
+<member name="M:MBTreeViewExplorer.ShellDll.SHGetNewLinkInfo(System.String,System.String,System.Text.StringBuilder,System.Boolean@,MBTreeViewExplorer.ShellDll.SHGNLI)">
+	<Summary>Despite its name, the API returns a filename
+ for a link to be copied/created in a Target directory,
+ with a specific LinkTarget. It will create a unique name
+ unless instructed otherwise (SHGLNI_NOUNIQUE).  And add
+ the ".lnk" extension, unless instructed otherwise(SHGLNI.NOLNK)
+</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellDll.SHGetNewLinkInfo(System.IntPtr,System.String,System.Text.StringBuilder,System.Boolean@,MBTreeViewExplorer.ShellDll.SHGNLI)">
+	<Summary> Same function using a PIDL as the pszLinkTo.
+  SHGNLI.PIDL must be set.
+</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellDll.SHGetImageListHandle(System.Int32,System.Guid@,System.IntPtr@)">
+	<summary>
+SHGetImageList is not exported correctly in XP.  See KB316931
+http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q316931
+Apparently (and hopefully) ordinal 727 isn't going to change.
+</summary>
+</member><member name="M:MBTreeViewExplorer.ShellDll.SendMessage(System.IntPtr,System.Int32,System.Int32,System.IntPtr)">
+	<Summary>
+   Sends a message to some Window
+</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellDll.ImageList_GetIconSize(System.IntPtr,System.Int32@,System.Int32@)">
+	<Summary>
+   Gets an IconSize from a ImagelistHandle
+</Summary>
+</member><member name="T:MBTreeViewExplorer.ShellDll">
+	<summary>
+ ShellDll Class for MBTreeViewExplorer
+ </summary>
+</member><member name="M:MBTreeViewExplorer.ShellAPI.SendMessage(System.IntPtr,System.Int32,System.Int32,System.IntPtr)">
+	<Summary>
+   Sends a message to some Window
+</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellAPI.SHGetDesktopFolder(MBTreeViewExplorer.ShellAPI.IShellFolder@)">
+	<Summary>
+ Retrieves the IShellFolder interface for the desktop folder, which is the root of the Shell's namespace. 
+<param>ppshf -- Recieves the IShellFolder interface for the desktop folder</param>
+	</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellAPI.SHGetFileInfo(System.String,System.Int32,MBTreeViewExplorer.ShellAPI.SHFILEINFO@,System.Int32,System.Int32)">
+	<Summary>
+  SHGetFileInfo  - for a given Path as a string
+ </Summary>
+</member><member name="M:MBTreeViewExplorer.ShellAPI.SHGetFileInfo(System.IntPtr,System.Int32,MBTreeViewExplorer.ShellAPI.SHFILEINFO@,System.Int32,System.Int32)">
+	<Summary>
+  SHGetFileInfo  - for a given ItemIDList as IntPtr
+ </Summary>
+</member><member name="T:MBTreeViewExplorer.ShellAPI">
+	<summary>
+ ShellAPI Class for MBTreeViewExplorer
+ </summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.Dispose">
+	<summary>
+ Summary of Dispose.
+ </summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.Dispose(System.Boolean)">
+	<summary>
+ Deallocates CoTaskMem contianing m_Pidl and removes reference to m_Folder
+ </summary>
+	<param name="disposing"></param>
+</member><member name="M:MBTreeViewExplorer.ShellItem.Finalize">
+	<summary>
+ Summary of Finalize.
+ </summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.#ctor">
+	<summary>
+ Private Constructor. Creates ShellItem of the Desktop
+ </summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.#ctor(MBTreeViewExplorer.ShellAPI.IShellFolder,System.IntPtr,MBTreeViewExplorer.ShellItem)">
+	<summary>
+ Private Constructor, creates new ShellItem from the item's parent folder and
+  the item's PIDL relative to that folder.</summary>
+	<param name="folder">the folder interface of the parent</param>
+	<param name="pidl">the Relative PIDL of this item</param>
+	<param name="parent">the ShellItem of the parent</param>
+</member><member name="M:MBTreeViewExplorer.ShellItem.#ctor(MBTreeViewExplorer.ShellAPI.CSIDL)">
+	<summary>Create instance based on a non-desktop CSIDL.
+ Will create based on any CSIDL Except the DeskTop CSIDL</summary>
+	<param name="ID">Value from CSIDL enumeration denoting the folder to create this ShellItem of.</param>
+</member><member name="M:MBTreeViewExplorer.ShellItem.#ctor(System.String)">
+	<summary>Create a new ShellItem based on a Path Must be a valid FileSystem Path</summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.#ctor(System.Byte[],System.Byte[])">
+	<Summary>Given a Byte() containing the Pidl of the parent
+ folder and another Byte() containing the Pidl of the Item,
+ relative to the Folder, Create a ShellItem for the Item.
+ This is of primary use in dealing with "Shell IDList Array" 
+ formatted info passed in a Drag Operation
+ </Summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.IsValidPidl(System.Byte[])">
+	<Summary>It is impossible to validate a PIDL completely since its contents
+ are arbitrarily defined by the creating Shell Namespace.  However, it
+ is possible to validate the structure of a PIDL.</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.GetParentOf(System.IntPtr,System.IntPtr@)">
+	<Summary>Returns both the IShellFolder interface of the parent folder
+  and the relative pidl of the input PIDL</Summary>
+	<remarks>Several internal functions need this information and do not have
+ it readily available. GetParentOf serves those functions</remarks>
+</member><member name="M:MBTreeViewExplorer.ShellItem.SetUpAttributes(MBTreeViewExplorer.ShellAPI.IShellFolder,System.IntPtr)">
+	<summary>Get the base attributes of the folder/file that this ShellItem represents</summary>
+	<param name="folder">Parent Folder of this Item</param>
+	<param name="pidl">Relative Pidl of this Item.</param>
+</member><member name="M:MBTreeViewExplorer.ShellItem.ComputeSortFlag">
+	<summary>Computes the Sort key of this ShellItem, based on its attributes</summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.CompareTo(System.Object)">
+	<Summary> CompareTo(obj as object)
+  Compares obj to this instance based on SortFlag-- obj must be a ShellItem</Summary>
+	<SortOrder>  (low)Disks,non-browsable System Folders,browsable System Folders, Directories, Files, Nothing (high)</SortOrder>
+</member><member name="M:MBTreeViewExplorer.ShellItem.SetDispType">
+	<summary>
+ Set DisplayName, TypeName, and SortFlag when actually needed
+ </summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.FillDemandInfo">
+	<summary>
+ Obtains information available from FileInfo.
+ </summary>
+</member><member name="P:MBTreeViewExplorer.ShellItem.IsReadOnly">
+	<Summary>The IsReadOnly attribute causes an annoying access to any floppy drives
+ on the system. To postpone this (or avoid, depending on user action),
+ the attribute is only queried when asked for</Summary>
+</member><member name="P:MBTreeViewExplorer.ShellItem.IsSystem">
+	<Summary>The IsSystem attribute is seldom used, but required by DragDrop operations.
+ Since there is no way of getting ONLY the System attribute without getting
+ the RO attribute (which forces a reference to the floppy drive), we pay
+ the price of getting its own File/DirectoryInfo for this purpose alone.
+</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.GetFiles(System.String)">
+	<summary>
+ Returns the Files of this sub-folder, filtered by a filtering string, as an
+   ArrayList of ShellItems
+ Note: we do not keep the arraylist of files, Generate it each time
+ </summary>
+	<param name="Filter">A filter string (for example: *.Doc)</param>
+	<returns>An ArrayList of ShellItems. May return an empty ArrayList if there are none.</returns>
+</member><member name="M:MBTreeViewExplorer.ShellItem.ToString">
+	<summary>
+ Returns the DisplayName as the normal ToString value
+ </summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.DebugDump">
+	<summary>
+ Summary of DebugDump.
+ </summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.ItemIDListSize(System.IntPtr)">
+	<summary>
+ computes the actual size of the ItemIDList pointed to by pidl
+ </summary>
+	<param name="pidl">The pidl pointing to an ItemIDList</param>
+	<returns> Returns actual size of the ItemIDList, less the terminating nulnul</returns>
+</member><member name="M:MBTreeViewExplorer.ShellItem.PidlCount(System.IntPtr)">
+	<summary>
+ Counts the total number of SHItems in input pidl
+ </summary>
+	<param name="pidl">The pidl to obtain the count for</param>
+	<returns> Returns the count of SHItems pointed to by pidl</returns>
+</member><member name="M:MBTreeViewExplorer.ShellItem.GetLastID(System.IntPtr)">
+	<Summary>GetLastId -- returns a pointer to the last ITEMID in a valid
+ ITEMIDLIST. Returned pointer SHOULD NOT be released since it
+ points to place within the original PIDL</Summary>
+	<returns>IntPtr pointing to last ITEMID in ITEMIDLIST structure,
+ Returns IntPtr.Zero if given a null pointer.
+ If given a pointer to the Desktop, will return same pointer.</returns>
+	<remarks>This is what the API ILFindLastID does, however IL... 
+ functions are not supported before Win2K.</remarks>
+</member><member name="M:MBTreeViewExplorer.ShellItem.concatPidls(System.IntPtr,System.IntPtr)">
+	<summary>
+ Concatenates the contents of two pidls into a new Pidl (ended by 00)
+ allocating CoTaskMem to hold the result,
+ placing the concatenation (followed by 00) into the
+ allocated Memory,
+ and returning an IntPtr pointing to the allocated mem
+ </summary>
+	<param name="pidl1">IntPtr to a well formed SHItemIDList or IntPtr.Zero</param>
+	<param name="pidl2">IntPtr to a well formed SHItemIDList or IntPtr.Zero</param>
+	<returns>Returns a ptr to an ItemIDList containing the 
+   concatenation of the two (followed by the req 2 zeros
+   Caller must Free this pidl when done with it</returns>
+</member><member name="M:MBTreeViewExplorer.ShellItem.TrimPidl(System.IntPtr,System.IntPtr@)">
+	<summary>
+ Returns an ItemIDList with the last ItemID trimed off
+  This is necessary since I cannot get SHBindToParent to work 
+  It's purpose is to generate an ItemIDList for the Parent of a
+  Special Folder which can then be processed with DesktopBase.BindToObject,
+  yeilding a Folder for the parent of the Special Folder
+  It also creates and passes back a RELATIVE pidl for this item
+ </summary>
+	<param name="pidl">A pointer to a well formed ItemIDList. The PIDL to trim</param>
+	<param name="relPidl">BYREF IntPtr which will point to a new relative pidl
+        containing the contents of the last ItemID in the ItemIDList
+        terminated by the required 2 nulls.</param>
+	<returns> an ItemIDList with the last element removed.
+  Caller must Free this item when through with it
+  Also returns the new relative pidl in the 2nd parameter
+   Caller must Free this pidl as well, when through with it
+</returns>
+</member><member name="M:MBTreeViewExplorer.ShellItem.DumpPidl(System.IntPtr)">
+	<summary>
+ Dumps, to the Debug output, the contents of the mem block pointed to by
+ a PIDL. Depends on the internal structure of a PIDL
+ </summary>
+	<param name="pidl">The IntPtr(a PIDL) pointing to the block to dump</param>
+</member><member name="M:MBTreeViewExplorer.ShellItem.DumpHex(System.Byte[],System.Int32,System.Int32)">
+	<Summary>Dump a portion or all of a Byte Array to Debug output</Summary>
+	<param name="b">A single dimension Byte Array</param>
+	<param name="sPos">Optional start index of area to dump (default = 0)</param>
+	<param name="epos">Optional last index position to dump (default = end of array)</param>
+	<Remarks>
+	</Remarks>
+</member><member name="M:MBTreeViewExplorer.ShellItem.cPidl.ToPIDL">
+	<Summary> Copy the contents of a byte() containing a pidl to
+  CoTaskMemory, returning an IntPtr that points to that mem block
+ Assumes that this cPidl is properly terminated, as all New 
+ cPidls are.
+ Caller must Free the returned IntPtr when done with mem block.
+</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.cPidl.Decompose">
+	<Summary>Returns an object containing a byte() for each of this cPidl's
+ ITEMIDs (individual PIDLS), in order such that obj(0) is
+ a byte() containing the bytes of the first ITEMID, etc.
+ Each ITEMID is properly terminated with a nulnul
+</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.cPidl.IsEqual(MBTreeViewExplorer.ShellItem.cPidl)">
+	<Summary>Returns True if input cPidl's content exactly match the 
+ contents of this instance</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.cPidl.JoinPidlBytes(System.Byte[],System.Byte[])">
+	<Summary> Join two byte arrays containing PIDLS, returning a 
+ Byte() containing the resultant ITEMIDLIST. Both Byte() must
+ be properly terminated (nulnul)
+ Returns NOTHING if error
+ </Summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.cPidl.BytesToPidl(System.Byte[])">
+	<Summary> Copy the contents of a byte() containing a pidl to
+  CoTaskMemory, returning an IntPtr that points to that mem block
+ Caller must free the IntPtr when done with it
+</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.cPidl.StartsWith(System.IntPtr,System.IntPtr)">
+	<Summary>returns True if the beginning of pidlA matches PidlB exactly for pidlB's entire length</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.cPidl.StartsWith(MBTreeViewExplorer.ShellItem.cPidl,MBTreeViewExplorer.ShellItem.cPidl)">
+	<Summary>returns True if the beginning of A matches B exactly for B's entire length</Summary>
+</member><member name="M:MBTreeViewExplorer.ShellItem.cPidl.StartsWith(MBTreeViewExplorer.ShellItem.cPidl)">
+	<Summary>Returns true if the CPidl input parameter exactly matches the
+ beginning of this instance of CPidl</Summary>
+</member><member name="T:MBTreeViewExplorer.ShellItem">
+	<summary>
+ ShellItem Class for MBTreeViewExplorer
+ </summary>
+</member><member name="M:MBTreeViewExplorer.SystemImageList.Initializer">
+	<summary>
+ Summary of Initializer.
+ </summary>
+</member><member name="M:MBTreeViewExplorer.SystemImageList.GetIconIndex(MBTreeViewExplorer.ShellItem@,System.Boolean,System.Boolean)">
+	<summary>
+ Summary of GetIconIndex.
+ </summary>
+	<param name="item"></param>
+	<param name="GetOpenIcon"></param>
+</member><member name="M:MBTreeViewExplorer.SystemImageList.SetTreeViewImageList(System.Windows.Forms.TreeView,System.Boolean)">
+	<summary>
+ Summary of SetTreeViewImageList.
+ </summary>
+	<param name="treeView"></param>
+	<param name="forStateImages"></param>
+</member><member name="T:MBTreeViewExplorer.SystemImageList">
+	<summary>
+ Create ImageList for MBTreeViewExplorer
+ </summary>
+</member><member name="M:MBTreeViewExplorer.MBTreeViewExplorer.InitializeComponent">
+	<summary>
+ Initialize Components of MBExplorer
+ </summary>
+</member><member name="M:MBTreeViewExplorer.MBTreeViewExplorer.#ctor">
+	<summary>
+ Constructor of MBTreeViewExplorer
+ </summary>
+</member><member name="M:MBTreeViewExplorer.MBTreeViewExplorer.MBTreeViewExplorer_ForeColorChanged(System.Object,System.EventArgs)">
+	<summary>
+ Handles MBTreeViewExplorer ForeColor Property
+ </summary>
+</member><member name="M:MBTreeViewExplorer.MBTreeViewExplorer.LoadNodes">
+	<summary>
+ Load Nodes for MBTreeViewExplorer
+ </summary>
+</member><member name="M:MBTreeViewExplorer.MBTreeViewExplorer.MBTreeView_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+	<summary>
+ Handles All Events When Node Gets Selected.
+ </summary>
+</member><member name="M:MBTreeViewExplorer.MBTreeViewExplorer.MBTreeView_BeforeExpand(System.Object,System.Windows.Forms.TreeViewCancelEventArgs)">
+	<summary>
+ Load Sub Nodes for Selected Node
+ </summary>
+</member><member name="F:MBTreeViewExplorer.MBTreeViewExplorer._showCheckBox">
+	<summary>
+ Get or Set CheckBox for MBTreeViewExplorer
+ </summary>
+</member><member name="M:MBTreeViewExplorer.MBTreeViewExplorer.MBTreeViewExplorer_Validating(System.Object,System.EventArgs)">
+	<summary>
+ Handles Reloading of Nodes for MBTreeViewExplorer
+ </summary>
+</member><member name="T:MBTreeViewExplorer.MBTreeViewExplorer">
+	<summary>
+ MBTreeViewExplorer Class © Manoj K Bhoir
+ </summary>
+	<remarks>Version 1.0</remarks>
+</member>
+</members>
+</doc>

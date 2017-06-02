@@ -1,0 +1,4 @@
+RadioTunerfrm = 73, 120, 841, 572, , 25, 25, 793, 477, C
+clsFileIo = 0, 0, 0, 0, C
+modNetRadio = 75, 75, 960, 490, C
+modBass = 75, 75, 843, 527, C

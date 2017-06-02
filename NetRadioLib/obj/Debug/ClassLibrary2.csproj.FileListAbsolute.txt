@@ -1,0 +1,6 @@
+D:\wapp\ClassLibrary2\ClassLibrary2\obj\Debug\ResolveAssemblyReference.cache
+D:\wapp\ClassLibrary2\ClassLibrary2\bin\Debug\Bass.Net.dll
+D:\wapp\ClassLibrary2\ClassLibrary2\bin\Debug\NetRadioLib.dll
+D:\wapp\ClassLibrary2\ClassLibrary2\bin\Debug\NetRadioLib.pdb
+D:\wapp\ClassLibrary2\ClassLibrary2\obj\Debug\NetRadioLib.dll
+D:\wapp\ClassLibrary2\ClassLibrary2\obj\Debug\NetRadioLib.pdb
